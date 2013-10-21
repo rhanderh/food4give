@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Item:</b>
+  <%= @confession.item %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @confession.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_confession_path(@confession) %> |
+<%= link_to 'Back', confessions_path %>

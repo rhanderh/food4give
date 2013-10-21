@@ -33,9 +33,9 @@ class ConfessionsController < ApplicationController
   end
 
   # GET /confessions/1/edit
-  def edit
-    @confession = Confession.find(params[:id])
-  end
+ # def edit
+  #  @confession = Confession.find(params[:id])
+  #end
 
   # POST /confessions
   # POST /confessions.json
@@ -44,7 +44,7 @@ class ConfessionsController < ApplicationController
 
     respond_to do |format|
       if @confession.save
-        format.html { redirect_to @confession, notice: 'Confession was successfully created.' }
+        format.html { redirect_to @confession, notice: "Great job!" }
         format.json { render json: @confession, status: :created, location: @confession }
       else
         format.html { render action: "new" }
@@ -55,29 +55,29 @@ class ConfessionsController < ApplicationController
 
   # PUT /confessions/1
   # PUT /confessions/1.json
-  def update
-    @confession = Confession.find(params[:id])
+ # def update
+  #  @confession = Confession.find(params[:id])
 
-    respond_to do |format|
-      if @confession.update_attributes(params[:confession])
-        format.html { redirect_to @confession, notice: 'Confession was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @confession.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+   # respond_to do |format|
+    #  if @confession.update_attributes(params[:confession])
+     #   format.html { redirect_to @confession, notice: 'Confession was successfully updated.' }
+      #  format.json { head :no_content }
+     # else
+      #  format.html { render action: "edit" }
+       # format.json { render json: @confession.errors, status: :unprocessable_entity }
+      #end
+    #end
+  #end
 
   # DELETE /confessions/1
   # DELETE /confessions/1.json
-  def destroy
-    @confession = Confession.find(params[:id])
-    @confession.destroy
+  #def destroy
+   # @confession = Confession.find(params[:id])
+    #@confession.destroy
 
-    respond_to do |format|
-      format.html { redirect_to confessions_url }
-      format.json { head :no_content }
-    end
-  end
+    #respond_to do |format|
+     # format.html { redirect_to confessions_url }
+      #format.json { head :no_content }
+    #end
+ # end
 end

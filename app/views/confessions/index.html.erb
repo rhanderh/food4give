@@ -1,25 +1,26 @@
-<h1>Listing confessions</h1>
+<h1>The Latest Confessions</h1>
 
+<p>
+Don't feel bad.  You are not alone.  See what else everyone else has been eating...	
+</p>
 <table>
   <tr>
-    <th>Item</th>
-    <th>User</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>The "Naughty" List</th>
+
   </tr>
 
 <% @confessions.each do |confession| %>
   <tr>
     <td><%= confession.item %></td>
-    <td><%= confession.user_id %></td>
+  <!-- <td><%= confession.user_id %></td> -->
+    <!--
     <td><%= link_to 'Show', confession %></td>
     <td><%= link_to 'Edit', edit_confession_path(confession) %></td>
-    <td><%= link_to 'Destroy', confession, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Destroy', confession, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Confession', new_confession_path %>
+<%= link_to 'What would you like to confess?', new_confession_path %>

@@ -2807,3 +2807,880 @@ Served asset /scaffolds.css - 304 Not Modified (0ms)
 
 Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-20 18:56:08 -0700
 Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-10-20 19:09:59 -0700
+Connecting to database specified by database.yml
+Processing by ConfessionsController#new as HTML
+  Rendered confessions/_form.html.erb (7.7ms)
+  Rendered confessions/new.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 103ms (Views: 60.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-20 19:09:59 -0700
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-20 19:09:59 -0700
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-20 19:09:59 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-20 19:09:59 -0700
+Served asset /confessions.css - 200 OK (2ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-20 19:09:59 -0700
+Served asset /confessions.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-20 19:09:59 -0700
+Served asset /jquery.js - 304 Not Modified (21ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-20 19:09:59 -0700
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started POST "/confessions" for 127.0.0.1 at 2013-10-20 19:38:53 -0700
+Processing by ConfessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bxdYNP5Ek1FFShoSafPlctwjS0NrbAP/wY9Aq+ESqfU=", "confession"=>{"item"=>"Cake"}, "commit"=>"Be Forgiven"}
+  [1m[36m (5.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (49.0ms)[0m  INSERT INTO "confessions" ("created_at", "item", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Mon, 21 Oct 2013 02:38:53 UTC +00:00], ["item", "Cake"], ["updated_at", Mon, 21 Oct 2013 02:38:53 UTC +00:00], ["user_id", nil]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/confessions/1
+Completed 302 Found in 94ms (ActiveRecord: 55.4ms)
+
+
+Started GET "/confessions/1" for 127.0.0.1 at 2013-10-20 19:38:54 -0700
+Processing by ConfessionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mConfession Load (0.5ms)[0m  SELECT "confessions".* FROM "confessions" WHERE "confessions"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered confessions/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 43ms (Views: 18.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-20 19:38:54 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-20 19:38:54 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-20 19:38:54 -0700
+Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-20 19:38:54 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-20 19:38:54 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-20 19:38:54 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-20 19:38:54 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/confessions" for 127.0.0.1 at 2013-10-20 20:00:11 -0700
+Processing by ConfessionsController#index as HTML
+  [1m[36mConfession Load (0.4ms)[0m  [1mSELECT "confessions".* FROM "confessions" [0m
+  Rendered confessions/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-20 20:00:11 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-20 20:00:11 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-20 20:00:11 -0700
+Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-20 20:00:11 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-20 20:00:11 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-20 20:00:11 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-20 20:00:11 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/confessions/new" for 127.0.0.1 at 2013-10-22 19:14:35 -0700
+Processing by ConfessionsController#new as HTML
+  Rendered confessions/_form.html.erb (14.5ms)
+  Rendered confessions/new.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-22 19:14:35 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-22 19:14:35 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-22 19:14:35 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-22 19:14:35 -0700
+Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-22 19:14:35 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-22 19:14:35 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-22 19:14:35 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/confessions" for 127.0.0.1 at 2013-10-22 19:14:39 -0700
+Processing by ConfessionsController#index as HTML
+  [1m[35mConfession Load (9.7ms)[0m  SELECT "confessions".* FROM "confessions" 
+  Rendered confessions/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 19ms (Views: 6.0ms | ActiveRecord: 9.7ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-22 19:14:39 -0700
+Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-22 19:14:40 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-22 19:14:40 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-22 19:14:40 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-22 19:14:40 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-22 19:14:40 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-22 19:14:40 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/confessions/new" for 127.0.0.1 at 2013-10-22 19:14:41 -0700
+Processing by ConfessionsController#new as HTML
+  Rendered confessions/_form.html.erb (1.6ms)
+  Rendered confessions/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-22 19:14:41 -0700
+Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-22 19:14:41 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-22 19:14:41 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-22 19:14:41 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-22 19:14:41 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-22 19:14:41 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-22 19:14:41 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/confessions" for 127.0.0.1 at 2013-10-22 19:14:50 -0700
+Processing by ConfessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bxdYNP5Ek1FFShoSafPlctwjS0NrbAP/wY9Aq+ESqfU=", "confession"=>{"item"=>"Chocolate Goodies"}, "commit"=>"Be Forgiven"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.1ms)[0m  INSERT INTO "confessions" ("created_at", "item", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Wed, 23 Oct 2013 02:14:50 UTC +00:00], ["item", "Chocolate Goodies"], ["updated_at", Wed, 23 Oct 2013 02:14:50 UTC +00:00], ["user_id", nil]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/confessions/2
+Completed 302 Found in 10ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/confessions/2" for 127.0.0.1 at 2013-10-22 19:14:50 -0700
+Processing by ConfessionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mConfession Load (0.1ms)[0m  SELECT "confessions".* FROM "confessions" WHERE "confessions"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered confessions/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-22 19:14:50 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-22 19:14:50 -0700
+Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-22 19:14:50 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-22 19:14:50 -0700
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-22 19:14:50 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-22 19:14:50 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-22 19:14:50 -0700
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/confessions" for 127.0.0.1 at 2013-10-22 19:14:56 -0700
+Processing by ConfessionsController#index as HTML
+  [1m[36mConfession Load (0.8ms)[0m  [1mSELECT "confessions".* FROM "confessions" [0m
+  Rendered confessions/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-22 19:14:56 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-22 19:14:56 -0700
+Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-22 19:14:56 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-22 19:14:56 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-22 19:14:56 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-22 19:14:56 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-22 19:14:56 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/confessions/new" for 127.0.0.1 at 2013-10-24 23:01:30 -0700
+Processing by ConfessionsController#new as HTML
+  Rendered confessions/_form.html.erb (11.0ms)
+  Rendered confessions/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 32ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-24 23:01:30 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-24 23:01:30 -0700
+Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-24 23:01:30 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-24 23:01:30 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-24 23:01:30 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-24 23:01:30 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-24 23:01:30 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/confessions" for 127.0.0.1 at 2013-10-24 23:01:32 -0700
+Processing by ConfessionsController#index as HTML
+  [1m[35mConfession Load (3.4ms)[0m  SELECT "confessions".* FROM "confessions" 
+  Rendered confessions/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 17ms (Views: 10.0ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-24 23:01:32 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-24 23:01:32 -0700
+Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-24 23:01:32 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-24 23:01:32 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-24 23:01:32 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-24 23:01:32 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-24 23:01:32 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/confessions/new" for 127.0.0.1 at 2013-10-24 23:18:35 -0700
+Processing by ConfessionsController#new as HTML
+  Rendered confessions/_form.html.erb (1.3ms)
+  Rendered confessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-24 23:18:35 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-24 23:18:35 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-24 23:18:35 -0700
+Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-24 23:18:35 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-24 23:18:35 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-24 23:18:35 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-24 23:18:35 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/confessions" for 127.0.0.1 at 2013-10-24 23:18:38 -0700
+Processing by ConfessionsController#index as HTML
+  [1m[36mConfession Load (0.2ms)[0m  [1mSELECT "confessions".* FROM "confessions" [0m
+  Rendered confessions/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-24 23:18:38 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-24 23:18:38 -0700
+Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-24 23:18:38 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-24 23:18:38 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-24 23:18:38 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-24 23:18:38 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-24 23:18:38 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/confessions/new" for 127.0.0.1 at 2013-10-24 23:18:39 -0700
+Processing by ConfessionsController#new as HTML
+  Rendered confessions/_form.html.erb (1.4ms)
+  Rendered confessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-24 23:18:39 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-24 23:18:39 -0700
+Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-24 23:18:39 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-24 23:18:39 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-24 23:18:39 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-24 23:18:39 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-24 23:18:39 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/confessions" for 127.0.0.1 at 2013-10-26 13:19:43 -0700
+Processing by ConfessionsController#index as HTML
+  [1m[35mConfession Load (0.7ms)[0m  SELECT "confessions".* FROM "confessions" 
+  Rendered confessions/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 17ms (Views: 10.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-26 13:19:43 -0700
+Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-26 13:19:43 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-26 13:19:43 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-26 13:19:43 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-26 13:19:43 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-26 13:19:43 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-26 13:19:43 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/confessions/new" for 127.0.0.1 at 2013-10-26 13:19:44 -0700
+Processing by ConfessionsController#new as HTML
+  Rendered confessions/_form.html.erb (1.4ms)
+  Rendered confessions/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-26 13:19:44 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-26 13:19:44 -0700
+Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-26 13:19:44 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-26 13:19:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-26 13:19:44 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-26 13:19:44 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-26 13:19:44 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/confessions" for 127.0.0.1 at 2013-10-27 13:00:42 -0700
+Connecting to database specified by database.yml
+Processing by ConfessionsController#index as HTML
+  [1m[36mConfession Load (0.1ms)[0m  [1mSELECT "confessions".* FROM "confessions" [0m
+  Rendered confessions/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 125ms (Views: 75.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 13:00:42 -0700
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 13:00:42 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-27 13:00:42 -0700
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-27 13:00:42 -0700
+Served asset /confessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-27 13:00:42 -0700
+Served asset /confessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 13:00:42 -0700
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 13:00:42 -0700
+Served asset /application.js - 304 Not Modified (31ms)
+
+
+Started GET "/confessions/new" for 127.0.0.1 at 2013-10-27 13:00:44 -0700
+Processing by ConfessionsController#new as HTML
+  Rendered confessions/_form.html.erb (11.0ms)
+  Rendered confessions/new.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 13:00:44 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-27 13:00:44 -0700
+Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-27 13:00:44 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 13:00:44 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-27 13:00:44 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 13:00:44 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 13:00:44 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/confessions" for 127.0.0.1 at 2013-10-27 13:05:55 -0700
+Processing by ConfessionsController#index as HTML
+  [1m[35mConfession Load (0.2ms)[0m  SELECT "confessions".* FROM "confessions" 
+  Rendered confessions/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 13:05:55 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-27 13:05:55 -0700
+Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-27 13:05:55 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 13:05:55 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 13:05:55 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-27 13:05:55 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 13:05:55 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/confessions/new" for 127.0.0.1 at 2013-10-27 13:05:56 -0700
+Processing by ConfessionsController#new as HTML
+  Rendered confessions/_form.html.erb (2.0ms)
+  Rendered confessions/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-27 13:05:56 -0700
+Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 13:05:56 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-27 13:05:56 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 13:05:56 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 13:05:56 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-27 13:05:56 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 13:05:56 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/confessions/new" for 127.0.0.1 at 2013-10-27 13:06:38 -0700
+Processing by ConfessionsController#new as HTML
+  Rendered confessions/_form.html.erb (3.8ms)
+  Rendered confessions/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 11ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 13:06:38 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 13:06:38 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-27 13:06:38 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-27 13:06:38 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 13:06:38 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-27 13:06:38 -0700
+Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 13:06:38 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/confessions" for 127.0.0.1 at 2013-10-27 13:06:52 -0700
+Processing by ConfessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bxdYNP5Ek1FFShoSafPlctwjS0NrbAP/wY9Aq+ESqfU=", "confession"=>{"item"=>"Brownies"}, "commit"=>"Forgive Yourself"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (10.5ms)[0m  INSERT INTO "confessions" ("created_at", "item", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["created_at", Sun, 27 Oct 2013 20:06:52 UTC +00:00], ["item", "Brownies"], ["updated_at", Sun, 27 Oct 2013 20:06:52 UTC +00:00], ["user_id", nil]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/confessions/3
+Completed 302 Found in 16ms (ActiveRecord: 11.7ms)
+
+
+Started GET "/confessions/3" for 127.0.0.1 at 2013-10-27 13:06:52 -0700
+Processing by ConfessionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mConfession Load (0.3ms)[0m  SELECT "confessions".* FROM "confessions" WHERE "confessions"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered confessions/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 13:06:52 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-27 13:06:52 -0700
+Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 13:06:52 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-27 13:06:52 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-27 13:06:52 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 13:06:52 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 13:06:52 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/confessions" for 127.0.0.1 at 2013-10-27 13:06:56 -0700
+Processing by ConfessionsController#index as HTML
+  [1m[36mConfession Load (0.3ms)[0m  [1mSELECT "confessions".* FROM "confessions" [0m
+  Rendered confessions/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 13:06:56 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-27 13:06:56 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-27 13:06:56 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 13:06:56 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 13:06:56 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-27 13:06:56 -0700
+Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 13:06:56 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/confessions" for 127.0.0.1 at 2013-10-27 13:07:48 -0700
+Processing by ConfessionsController#index as HTML
+  [1m[35mConfession Load (0.2ms)[0m  SELECT "confessions".* FROM "confessions" 
+  Rendered confessions/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 13:07:48 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 13:07:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-27 13:07:48 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-27 13:07:48 -0700
+Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-27 13:07:48 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 13:07:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 13:07:48 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/confessions/new" for 127.0.0.1 at 2013-10-27 13:07:50 -0700
+Processing by ConfessionsController#new as HTML
+  Rendered confessions/_form.html.erb (1.8ms)
+  Rendered confessions/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-10-27 13:07:50 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.css?body=1" for 127.0.0.1 at 2013-10-27 13:07:50 -0700
+Served asset /confessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-27 13:07:50 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-10-27 13:07:50 -0700
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-27 13:07:50 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-27 13:07:50 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 13:07:50 -0700
+Served asset /application.js - 304 Not Modified (0ms)

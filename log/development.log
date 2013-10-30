@@ -3684,3 +3684,59 @@ Served asset /confessions.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-27 13:07:50 -0700
 Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (5.8ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateConfessions (20131021005321)
+  [1m[35m (0.8ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-10-29 23:33:18 -0700
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (4ms)
+
+
+Started GET "/confessions" for 127.0.0.1 at 2013-10-29 23:33:28 -0700
+Processing by ConfessionsController#index as HTML
+  [1m[36mConfession Load (0.1ms)[0m  [1mSELECT "confessions".* FROM "confessions" [0m
+  Rendered confessions/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 84ms (Views: 48.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-29 23:33:28 -0700
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-29 23:33:28 -0700
+Served asset /confessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-29 23:33:28 -0700
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-29 23:33:28 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/confessions/new" for 127.0.0.1 at 2013-10-29 23:33:30 -0700
+Processing by ConfessionsController#new as HTML
+  Rendered confessions/_form.html.erb (27.1ms)
+  Rendered confessions/new.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 37ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-10-29 23:33:30 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-10-29 23:33:30 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/confessions.js?body=1" for 127.0.0.1 at 2013-10-29 23:33:30 -0700
+Served asset /confessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-10-29 23:33:30 -0700
+Served asset /application.js - 304 Not Modified (0ms)
